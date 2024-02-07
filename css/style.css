@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+/* Tablet */
+@media (min-width: 701px) and (max-width: 1120px){
+
+}
+/* Mobile */
+@media (max-width: 700px) {
+
 html {
   margin:0;
   padding: 0;
@@ -162,4 +169,5 @@ margin-bottom: 30px;
   width:70%;
   height: 1px;
   background-color: rgb(85, 164, 229);
+}
 }
