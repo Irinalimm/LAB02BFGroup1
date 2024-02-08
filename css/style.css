@@ -10,6 +10,11 @@
 /* Mobile */
 @media (max-width: 700px) {
 
+  *{
+    margin:0;
+    padding: 0;
+  }
+
 html {
   margin:0;
   padding: 0;
@@ -151,7 +156,9 @@ header {
 .page-footer{
   background-color: rgb(1, 21, 45);
   color: white;
-  padding: 30px 80px;
+  padding: 30px 80px 0 80px;
+  margin-bottom: 0;
+
 }
 .col-author{
 margin-bottom: 30px;
@@ -170,4 +177,73 @@ margin-bottom: 30px;
   height: 1px;
   background-color: rgb(85, 164, 229);
 }
+
+/* from here */
+
+.social-container {
+  margin: 0;
 }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.recent-tweets {
+  margin-top: 20px;
+}
+
+.twitter-container {
+  display: table;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width:100%
+}
+.footer-decoration-block{
+  padding:0;
+  margin:0;
+  display: table;
+  flex-direction: row;
+  background-color:greenyellow;
+  align-items: center;
+  align-self: center;
+  justify-content: stretch;
+  width:100%;
+}
+.footer-decoration-block-one{
+  display: table-cell;
+  height:15px;
+  background-color:green;
+  width:auto;
+  padding:0;
+  margin:0;
+  width:40px;
+}
+.footer-decoration-block-two{
+  display: table-cell;
+  height:15px;
+  background-color:yellow;
+  width:auto;
+}
+.footer-decoration-block-three{
+  display: table-cell;
+  height:15px;
+  background-color:red;
+  width:auto;
+}
+.footer-decoration-block-four{
+  display: table-cell;
+  height:15px;
+  background-color:blue;
+  width:auto;
+}
+.footer-decoration-block-five{
+  display: table-cell;
+  height:15px;
+  background-color:navy;
+  width:auto;
+}
+}
+
