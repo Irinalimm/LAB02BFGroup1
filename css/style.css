@@ -5,6 +5,33 @@
 
 /* Desktop */
 @media (min-width: 64em) {
+
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  display: flex;
+justify-content: center;
+}
+  .carousel-image {
+    width: 80vh;
+    height: 30vh;
+  }
+  
+  .carousel-buttons {
+    position: absolute;
+    bottom: 15vh;
+    left: 0;
+    right: 50vh;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+
   .row {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1.5rem;
@@ -18,8 +45,8 @@
     align-items: center;
     margin-left: 30%;
     margin-right: 30%;
+    align-items: center;
 
-    
   }
 
   .col-service {
@@ -27,19 +54,11 @@
     flex-wrap: wrap;
     justify-self: center;
     width: 60%;
+    height: 90%;
 
   }
-  .service-header {
-
-
-  }
-
-  .service-icon {
-    
-  }
-
-
 }
+
 
 /* Tablet */
 @media (min-width: 701px) and (max-width: 1120px) {
@@ -47,10 +66,35 @@
     margin: 0;
     padding: 0;
   }
+
+
+  .content {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+  justify-content: center;
+  }
+    .carousel-image {
+      width: 80vh;
+      height: 30vh;
+    }
+    
+    .carousel-buttons {
+      position: absolute;
+      bottom: 15vh;
+      left: 0;
+      right: 50vh;
+      text-align: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 }
 
 /* Mobile */
-@media (min-width: 300px) {
+@media (min-width: 700px) {
 
   * {
     margin: 0;
@@ -73,7 +117,6 @@
   header {
     /* outline: 1px solid #ccc; */
   }
-
 
   .row {
     display: grid;
