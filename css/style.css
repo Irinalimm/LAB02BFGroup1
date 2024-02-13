@@ -257,8 +257,7 @@ html {
     font-size: 1em;
     line-height: 1.4;
   }
-
-
+  
   .row {
     display: grid;
     row-gap: 0.5rem;
@@ -291,10 +290,9 @@ html {
 .l-col-4 {
     grid-template-columns: repeat(4, 1fr);
 }
-/**page header needs to change for desktop ver*/
+
   .page-header{
-    
-    display: none;
+    display: flex;
     justify-content: space-between;
     outline: none;
     margin: 0 auto;
@@ -502,6 +500,8 @@ justify-content: center;
   }
   
   
+
+  
   .social-container {
     margin: 0;
   }
@@ -572,7 +572,7 @@ justify-content: center;
 }
 
 /* Medium and up */
-@media (min-width: 40em) and (max-width: 64em){
+@media screen and (min-width: 40em) {
   * {
     margin: 0;
     padding: 0;
