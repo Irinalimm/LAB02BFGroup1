@@ -235,6 +235,11 @@ html {
   width: auto;
 }
 
+.content {
+  display: none;
+}
+
+
 /* Large and up */
 @media screen and (min-width: 64em) {
 
@@ -383,22 +388,44 @@ html {
     width: 80vh;
     height: 30vh;
     display: block;
-    align-items: center;
     justify-content: center;
-    align-self: center;
   }
 
   .carousel-buttons {
     position: absolute;
-    bottom: 15vh;
-    left: 0;
-    right: 50vh;
-    text-align: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    bottom: 13vh;
+    left: 30%;
+    list-style-type: none;
+  }
+  
+  ul {
+    background-color: white;
   }
 
+  .carousel-buttons p:nth-child(1){
+    border-left: 5px solid blue;
+    padding: 5px;
+  }
+
+  .carousel-buttons p:nth-child(2){
+    border-left: 5px solid red;
+    padding: 5px;
+  }
+
+  .carousel-buttons p:nth-child(3){
+    border-left: 5px solid yellow;
+    padding: 5px;
+  }
+
+
+  .col-service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    width: 60%;
+    height: 90%;
+
+  }
 
   .row {
     grid-template-columns: repeat(3, 1fr);
@@ -414,15 +441,6 @@ html {
     margin-left: 30%;
     margin-right: 30%;
     align-items: center;
-
-  }
-
-  .col-service {
-    display: flex;
-    flex-wrap: wrap;
-    justify-self: center;
-    width: 60%;
-    height: 90%;
 
   }
 
@@ -738,7 +756,7 @@ bottom:  -0.5rem;
 }
 
 /* Medium and up */
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 40em) and (max-width:64em){
   * {
     margin: 0;
     padding: 0;
@@ -756,16 +774,69 @@ bottom:  -0.5rem;
   .carousel-image {
     width: 80vh;
     height: 30vh;
+    display: block;
+    justify-content: center;
   }
 
   .carousel-buttons {
     position: absolute;
-    bottom: 15vh;
-    left: 0;
-    right: 50vh;
-    text-align: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    bottom: 13vh;
+    left: 20%;
+    list-style-type: none;
+  }
+  
+  ul {
+    background-color: white;
+  }
+
+  .carousel-buttons p:nth-child(1){
+    border-left: 5px solid blue;
+    padding: 5px;
+  }
+
+  .carousel-buttons p:nth-child(2){
+    border-left: 5px solid red;
+    padding: 5px;
+  }
+
+  .carousel-buttons p:nth-child(3){
+    border-left: 5px solid yellow;
+    padding: 5px;
+  }
+
+  .rowService {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-items: center;
+
+  }
+
+  .col-service {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90%;
+    justify-self: center;
+  }
+
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+  }
+
+  .rowService {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-items: center;
+
   }
 }
