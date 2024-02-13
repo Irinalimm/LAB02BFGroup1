@@ -6,7 +6,7 @@
 html {
   margin: 0;
   padding: 0;
-  color: #222;
+  color: #100f0f;
   font-size: 1em;
   line-height: 1.4;
 }
@@ -24,12 +24,17 @@ html {
 .col {
   position: relative;
 }
+.header-menu-icon-m-l{
+  display: none;
+}
+
+
 
 .page-header {
   display: flex;
   justify-content: space-between;
   outline: none;
-  margin: 20px 0;
+  margin: 0 auto;
   align-items: center;
   padding: 0 80px;
 }
@@ -40,7 +45,7 @@ html {
   width: 120px;
 }
 
-.header-menu-icon {
+.l-hide.header-menu-icon {
   background-color: rgb(76, 161, 210);
   display: flex;
   flex-direction: column;
@@ -238,7 +243,7 @@ html {
     outline: none;
     margin: 0 auto;
     align-items: center;
-    max-width: 70rem;
+    max-width: 56rem;
   }
 
   .logo-image {
@@ -375,9 +380,6 @@ html {
     background-color: rgb(85, 164, 229);
   }
   
-  
-
-  
   .social-container {
     margin: 0;
   }
@@ -444,7 +446,12 @@ html {
     background-color:rgb(62, 62, 165);
     width:auto;
   }
-  
+
+  .content{
+    background-color: #7f7f7f;
+    position: relative;
+    left:100px
+  }
 }
 
 /* Medium and up */
